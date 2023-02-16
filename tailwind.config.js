@@ -11,6 +11,7 @@ module.exports = {
         primary_text: "#CCD6F6",
         secondary: "#61F9D5",
         secondary_text: "#8892B0",
+        misc: "#112240",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

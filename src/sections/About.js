@@ -26,26 +26,32 @@ const About = () => {
             About Me
           </p>
           <div className="relative flex py-5 items-center pl-2 w-[250px] max-w-[250px]">
-            <div className="flex-grow border-t border-secondary_text"></div>
+            <div className="flex-grow border-t border-secondary_text/50"></div>
           </div>
         </div>
-        <div className="font-inter text-secondary_text mt-10 flex flex-row gap-10 max-w-3xl">
+        <div className="font-inter text-secondary_text mt-10 flex flex-row gap-10 max-w-3xl leading-relaxed">
           <div>
             <p>
               Hello! I'm Jacob, and for as long as I can remember, I've been
-              drawn to problem solving and the process of creating something.
-              From building with LEGO as a kid, to assembling IKEA furniture and
+              drawn to <span className="text-secondary">problem solving</span>{" "}
+              and the process of{" "}
+              <span className="text-secondary">creating</span> something. From
+              building with LEGO as a kid, to assembling IKEA furniture and
               building computers. To scratch my itch for problem solving, I
               applied for the Bachelor's Programme in Information System
-              Analysis, and after the first course in programming I was hooked.
-              This led to me mayoring in Systems Development, and that sparked a
-              further interest in learning new languagues and technologies.
+              Analysis , and after the first course in{" "}
+              <span className="text-secondary">programming</span> I was hooked.
+              This led to me mayoring in Systems Development, which is what
+              sparked a further{" "}
+              <span className="text-secondary">interest in learning</span> new
+              languagues and technologies.
             </p>
             <br />
             <p>
-              I'm currently studying my final year as a software developer
-              student, and I can't wait to enter the professional world of
-              software development to keep expanding my knowledge.
+              I'm currently studying my final semester as a{" "}
+              <span className="text-secondary">Software Developer Student</span>
+              , and I can't wait to enter the professional world of software
+              development to keep expanding my knowledge.
             </p>
           </div>
           <div className="flex justify-right">
@@ -56,10 +62,14 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="mt-14 max-w-3xl flex justify-center flex-col items-center">
+        <div className="relative flex py-5 items-center w-[250px] max-w-[250px] mt-10">
+          <div className="flex-grow border-t border-secondary_text/50"></div>
+        </div>
+        <div className=" max-w-3xl flex justify-center flex-col items-center leading-relaxed">
           <p className="font-inter text-secondary_text max-w-[500px]">
-            Here are some tools and technologies I've learned and used
-            throughout my education and in my spare time:
+            Here are some <span className="text-secondary">tools</span> and
+            <span className="text-secondary"> technologies</span> I've learned
+            and used throughout my education and in my spare time:
           </p>
           <div className="mt-6 ml-[-42px]">
             <ul className="gap-2 gap-x-16 grid grid-cols-3 mb-4 text-seconday_text font-mono text-sm">
