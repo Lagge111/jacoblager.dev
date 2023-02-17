@@ -2,23 +2,23 @@ import { Github } from "./Icons";
 
 const ProjectCard = ({ cover, title, description, tech, link }) => {
   return (
-    <div className="flex flex-grow justify-left mt-14 gap-4">
+    <div className="flex flex-grow justify-left mt-14 gap-4 lg:flex-row flex-col">
       <div className="bg-misc_dark max-w-[60%] border-b-2 border-l-2 border-secondary/30 rounded-md">
         <img
           src={cover}
           alt="cover"
-          className="rounded-sm filter brightness-75 max-w-[500px]"
+          className="rounded-sm filter brightness-90 max-w-full min-w-[315px] h-auto"
         />
       </div>
-      <div className="flex items-end flex-col z-20">
-        <p className="font-mono text-secondary text-sm text-end">
+      <div className="flex lg:items-end items-start flex-col z-20">
+        <p className="font-mono text-secondary text-sm lg:text-end text-left">
           Featured Project
         </p>
-        <p className="font-inter text-primary_text font-bold text-2xl text-end mt-2">
+        <p className="font-inter text-primary_text font-bold text-2xl lg:text-end text-start mt-2">
           {title}
         </p>
-        <div className="pl-4 mt-6 max-w-[400px] relative z-2 flex justify-right rounded-sm flex-col">
-          <p className="font-inter text-secondary_text text-end leading-relaxed">
+        <div className="lg:pl-4 mt-6 max-w-[400px] relative z-2 flex justify-right rounded-sm flex-col">
+          <p className="font-inter text-secondary_text lg:text-end text-left leading-relaxed">
             {description}
           </p>
           <div className="mt-4">
@@ -35,6 +35,7 @@ const ProjectCard = ({ cover, title, description, tech, link }) => {
           </div>
         </div>
         <div className="mt-4">
+          <></>
           <a
             href={link}
             target="_blank"

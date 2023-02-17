@@ -18,12 +18,14 @@ const Work = () => {
       className="flex justify-center items-center content-center m-auto max-w-[900px]"
     >
       <div className="flex justify-left pt-80 flex-col">
-        <div className="flex flex-row gap-2 items-center">
-          <p className="font-mono text-secondary text-xl">02.</p>
-          <p className="text-primary_text font-inter font-bold text-2xl">
-            Some Things I've Built
-          </p>
-          <div className="relative flex py-5 items-center pl-2 w-[250px] max-w-[250px]">
+        <div className="flex sm:flex-row flex-col gap-2 items-center">
+          <div className="flex justify-start items-start">
+            <p className="font-mono text-secondary text-xl">02.</p>
+            <p className="text-primary_text font-inter font-bold text-2xl">
+              Some Things I've Built
+            </p>
+          </div>
+          <div className="relative flex py-5 items-center pl-2 md:w-[250px] sm:w-[300px] w-[300px] max-w-[250px]">
             <div className="flex-grow border-t border-secondary_text/30"></div>
           </div>
         </div>

@@ -28,11 +28,11 @@ const About = () => {
           <p className="text-primary_text font-inter font-bold text-2xl">
             About Me
           </p>
-          <div className="relative flex py-5 items-center pl-2 w-[250px] max-w-[250px]">
+          <div className="relative flex py-5 items-center pl-2 md:w-[250px] sm:w-[200px] w-[150px] max-w-[250px]">
             <div className="flex-grow border-t border-secondary_text/30"></div>
           </div>
         </div>
-        <div className="font-inter text-secondary_text mt-10 flex flex-row gap-10 max-w-3xl leading-relaxed">
+        <div className="font-inter text-secondary_text mt-10 flex flex-col md:flex-row gap-10 max-w-3xl leading-relaxed">
           <div>
             <p>
               Hello! I'm Jacob, and for as long as I can remember, I've been
@@ -57,7 +57,7 @@ const About = () => {
               development to keep expanding my knowledge.
             </p>
           </div>
-          <div className="flex justify-right">
+          <div className="flex md:justify-right justify-center">
             <img
               src={Profile}
               alt=""
@@ -75,7 +75,7 @@ const About = () => {
             and used throughout my education and in my spare time:
           </p>
           <div className="mt-6 ml-[-42px]">
-            <ul className="gap-2 gap-x-16 grid grid-cols-3 mb-4 text-seconday_text font-mono text-sm">
+            <ul className="gap-2 gap-x-16 grid md:grid-cols-3 grid-cols-2 mb-4 text-seconday_text font-mono text-sm">
               {skills.map((skill, index) => (
                 <li
                   key={index}

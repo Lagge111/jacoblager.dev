@@ -43,7 +43,7 @@ const ProjectGrid = () => {
         {projects.map((item, index) => (
           <li
             key={index}
-            className="relative top-0 hover:top-[-5px] ease-in-out duration-200"
+            className="relative top-0 hover:top-[-5px] ease-in-out duration-200 md:mx-0 mx-8"
           >
             <div className="flex justify-between flex-col items-start h-full p-6 bg-misc_light overflow-auto">
               <div className="mb-4">
