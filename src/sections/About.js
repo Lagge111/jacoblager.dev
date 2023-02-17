@@ -35,33 +35,38 @@ const About = () => {
         <div className="font-inter text-secondary_text mt-10 flex flex-col md:flex-row gap-10 max-w-3xl leading-relaxed">
           <div>
             <p>
-              Hello! I'm Jacob, and for as long as I can remember, I've been
-              drawn to <span className="text-secondary">problem solving</span>{" "}
-              and the process of{" "}
-              <span className="text-secondary">creating</span> something. From
-              building with LEGO as a kid, to assembling IKEA furniture and
-              building computers. To scratch my itch for problem solving, I
-              applied for the Bachelor's Programme in Information System
-              Analysis , and after the first course in{" "}
-              <span className="text-secondary">programming</span> I was hooked.
-              This led to me mayoring in Systems Development, which is what
-              sparked a further{" "}
-              <span className="text-secondary">interest in learning</span> new
-              languagues and technologies.
-            </p>
-            <br />
-            <p>
-              I'm currently studying my final semester as a{" "}
-              <span className="text-secondary">Software Developer Student</span>
-              , and I can't wait to enter the professional world of software
-              development to keep expanding my knowledge.
+              Hello! I'm Jacob, and I have always been drawn to the process of{" "}
+              <span className="text-secondary">problem solving</span> and{" "}
+              <span className="text-secondary">creating</span> something new.
+              From building with LEGO as a child to assembling IKEA furniture
+              and building computers, I have always enjoyed the challenge of
+              bringing ideas to life. To further satisfy my love for problem
+              solving, I pursued a Bachelor's Programme in Information System
+              Analysis. After taking my first{" "}
+              <span className="text-secondary">programming</span> course, I was
+              immediately hooked. This led me to major in Systems Development
+              and sparked a{" "}
+              <span className="text-secondary">passion for learning</span> new
+              languages and technologies.
+              <br />
+              <br />
+              <p>
+                Currently, I am in my final semester as a{" "}
+                <span className="text-secondary">
+                  Software Developer Student
+                </span>
+                , and I am excited to embark on a career in the professional
+                world of software development. I look forward to expanding my
+                knowledge and skills as I pursue my passion for creating
+                innovative solutions.
+              </p>
             </p>
           </div>
           <div className="flex md:justify-right justify-center">
             <img
               src={Profile}
-              alt=""
-              className="object-cover overflow-hidden rounded-lg max-w-xs bg-secondary border-b-4 border-r-4 hover:border-r-2 hover:border-b-2 border-secondary hover:scale-105 ease-in-out duration-300"
+              alt="profile"
+              className="object-cover overflow-hidden rounded-lg max-w-xs bg-secondary border-b-2 border-r-2 border-secondary"
             />
           </div>
         </div>
