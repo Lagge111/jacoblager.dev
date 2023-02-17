@@ -18,7 +18,10 @@ const About = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center content-center m-auto max-w-[900px]">
+    <div
+      id="about"
+      className="flex justify-center items-center content-center m-auto max-w-[900px]"
+    >
       <div className="flex justify-left pt-80 flex-col">
         <div className="flex flex-row gap-2 items-center">
           <p className="font-mono text-secondary text-xl">01.</p>

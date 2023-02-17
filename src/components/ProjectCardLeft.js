@@ -28,7 +28,12 @@ const ProjectCardLeft = ({ cover, title, description, tech, link }) => {
           </div>
         </div>
         <div className="mt-4">
-          <a href={link} target="_blank" className="no-underline">
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="no-underline"
+          >
             <Github />
           </a>
         </div>

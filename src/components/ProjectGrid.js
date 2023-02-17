@@ -1,4 +1,3 @@
-import React from "react";
 import { Github } from "./Icons";
 
 const ProjectGrid = () => {
@@ -48,7 +47,12 @@ const ProjectGrid = () => {
           >
             <div className="flex justify-between flex-col items-start h-full p-6 bg-misc_light overflow-auto">
               <div className="mb-4">
-                <a title="Github" href={item.link} target="_blank">
+                <a
+                  title="Github"
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Github />
                 </a>
               </div>

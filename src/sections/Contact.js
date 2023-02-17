@@ -2,7 +2,10 @@ import { Github, Linkedin, Email } from "../components/Icons";
 
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center content-center m-auto max-w-[900px] flex-col">
+    <div
+      id="contact"
+      className="flex justify-center items-center content-center m-auto max-w-[900px] flex-col"
+    >
       <div className="flex justify-center pt-80 flex-col items-center">
         <div className="flex flex-row gap-2 items-center">
           <p className="font-mono text-secondary text-xl">03.</p>
@@ -27,6 +30,7 @@ const Contact = () => {
             title="Github"
             href="https://github.com/Lagge111"
             target="_blank"
+            rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
             <Github />
@@ -35,6 +39,7 @@ const Contact = () => {
             title="LinkedIn"
             href="https://www.linkedin.com/in/jacob-lager-98511b151/"
             target="_blank"
+            rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
             <Linkedin />
@@ -43,6 +48,7 @@ const Contact = () => {
             title="Email"
             href="mailto:jacoblager99@gmail.com"
             target="_blank"
+            rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
             <Email />

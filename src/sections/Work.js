@@ -13,7 +13,10 @@ const Work = () => {
   const PortfolioTech = ["React", "Tailwind CSS"];
 
   return (
-    <div className="flex justify-center items-center content-center m-auto max-w-[900px]">
+    <div
+      id="projects"
+      className="flex justify-center items-center content-center m-auto max-w-[900px]"
+    >
       <div className="flex justify-left pt-80 flex-col">
         <div className="flex flex-row gap-2 items-center">
           <p className="font-mono text-secondary text-xl">02.</p>
@@ -35,7 +38,7 @@ const Work = () => {
           <ProjectCardLeft
             cover={ChatAppCover}
             title="Chatify by A3 Studio"
-            description="Multi-user full-stack chat app, with WPF to create the GUI. Stores new chats and fetches existing chats from JSON file. Co-created with Mattias Larsson."
+            description="Multi-user full-stack chat app, using WPF to create the GUI. Stores new chats and fetches existing chats from JSON file. Co-created with Mattias Larsson."
             tech={ChatAppTech}
             link="https://gitlab.liu.se/jacla554/tddd49_725g66"
           />
