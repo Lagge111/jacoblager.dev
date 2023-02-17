@@ -3,14 +3,14 @@ import { Github } from "./Icons";
 const ProjectCard = ({ cover, title, description, tech, link }) => {
   return (
     <div className="flex flex-grow justify-left mt-14 gap-4">
-      <div className="max-w-[60%] border-b-2 border-l-2 border-secondary/30 rounded-md">
+      <div className="bg-misc_dark max-w-[60%] border-b-2 border-l-2 border-secondary/30 rounded-md">
         <img
           src={cover}
           alt="cover"
           className="rounded-sm filter brightness-75 max-w-[500px]"
         />
       </div>
-      <div className="flex items-end flex-col">
+      <div className="flex items-end flex-col z-20">
         <p className="font-mono text-secondary text-sm text-end">
           Featured Project
         </p>

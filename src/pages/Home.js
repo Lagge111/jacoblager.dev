@@ -10,10 +10,12 @@ const Home = () => {
   return (
     <div className="bg-primary h-full flex justify-center flex-col cursor-default">
       <Nav />
-      <Hero />
-      <About />
-      <Work />
-      <Contact />
+      <div className="px-10">
+        <Hero />
+        <About />
+        <Work />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

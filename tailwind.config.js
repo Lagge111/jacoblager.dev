@@ -11,7 +11,8 @@ module.exports = {
         primary_text: "#CCD6F6",
         secondary: "#61F9D5",
         secondary_text: "#8892B0",
-        misc: "#112240",
+        misc_light: "#112240",
+        misc_dark: "#0b1123",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -20,6 +21,9 @@ module.exports = {
       },
       minHeight: {
         full: "750px",
+      },
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fill, minmax(250px, 1fr))",
       },
     },
   },

@@ -6,12 +6,12 @@ const Contact = () => {
       <div className="flex justify-center pt-80 flex-col items-center">
         <div className="flex flex-row gap-2 items-center">
           <p className="font-mono text-secondary text-xl">03.</p>
-          <p className="text-primary_text font-inter font-bold text-2xl">
-            Let's Connect!
+          <p className="text-primary_text font-inter font-bold text-4xl">
+            Get In Touch
           </p>
         </div>
         <div className="relative flex py-8 items-center w-[250px] max-w-[250px]">
-          <div className="flex-grow border-t border-secondary_text/50"></div>
+          <div className="flex-grow border-t border-secondary_text/30"></div>
         </div>
       </div>
       <div>
@@ -21,7 +21,7 @@ const Contact = () => {
           <span className="text-secondary">I'm all ears!</span>
         </p>
       </div>
-      <div className="mt-10">
+      <div className="mt-4">
         <div className="flex flex-row gap-6 mt-6 items-center justify-center">
           <a
             title="Github"

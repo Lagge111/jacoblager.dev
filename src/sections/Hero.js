@@ -13,7 +13,11 @@ const Hero = () => {
         </p>
         <p className="text-secondary_text font-inter max-w-lg">
           I'm a software developer student with a passion for problem solving
-          and building things.{" "}
+          and building things. I enjoy experimenting with new technologies and
+          I'm always eager to learn.{" "}
+          <span className="text-secondary">
+            Welcome to my portfolio website.
+          </span>{" "}
         </p>
       </div>
     </div>

@@ -10,7 +10,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="fixed w-full z-20 mx-auto pt-4 top-0 backdrop-blur-sm bg-primary/30">
+    <header className="fixed w-full z-50 mx-auto pt-4 top-0 backdrop-blur-sm bg-primary/30">
       <nav className="max-w-3xl mx-auto px-4 md:px-6 flex justify-between items-center sm:py-2">
         <img
           src={LogoGreen}

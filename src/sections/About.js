@@ -26,7 +26,7 @@ const About = () => {
             About Me
           </p>
           <div className="relative flex py-5 items-center pl-2 w-[250px] max-w-[250px]">
-            <div className="flex-grow border-t border-secondary_text/50"></div>
+            <div className="flex-grow border-t border-secondary_text/30"></div>
           </div>
         </div>
         <div className="font-inter text-secondary_text mt-10 flex flex-row gap-10 max-w-3xl leading-relaxed">
@@ -63,7 +63,7 @@ const About = () => {
           </div>
         </div>
         <div className="relative flex py-5 items-center w-[250px] max-w-[250px] mt-10">
-          <div className="flex-grow border-t border-secondary_text/50"></div>
+          <div className="flex-grow border-t border-secondary_text/30"></div>
         </div>
         <div className=" max-w-3xl flex justify-center flex-col items-center leading-relaxed">
           <p className="font-inter text-secondary_text max-w-[500px]">
