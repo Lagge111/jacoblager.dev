@@ -49,16 +49,16 @@ const ProjectGrid = () => {
       <motion.ul
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ staggerChildren: 0.3 }}
+        transition={{ staggerChildren: 0.2, delay: 0.4 }}
         viewport={{ once: true }}
         className="grid grid-cols-fluid list-none relative gap-[15px] mt-14"
       >
         {projects.map((item, index) => (
           <motion.li
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            viewport={{ once: true }}
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // transition={{ delay: 0.3 }}
+            // viewport={{ once: true }}
             key={index}
             className="relative top-0 hover:top-[-5px] ease-in-out duration-200 md:mx-0 mx-8"
           >
