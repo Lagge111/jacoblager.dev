@@ -1,4 +1,4 @@
-import { Github, Linkedin, Email } from "../components/Icons";
+import { Github, LinkedIn, Email } from "../components/Icons";
 
 const Contact = () => {
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
             rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
-            <Github />
+            <Github strokeColor="secondary_text" width="28" height="28" />
           </a>
           <a
             title="LinkedIn"
@@ -42,7 +42,7 @@ const Contact = () => {
             rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
-            <Linkedin />
+            <LinkedIn strokeColor="secondary_text" width="30" height="30" />
           </a>
           <a
             title="Email"
@@ -51,7 +51,7 @@ const Contact = () => {
             rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
-            <Email />
+            <Email strokeColor="secondary_text" width="32" height="32" />
           </a>
         </div>
       </div>

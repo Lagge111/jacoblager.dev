@@ -22,11 +22,11 @@ const ProjectCard = ({ cover, title, description, tech, link }) => {
             {description}
           </p>
           <div className="mt-4">
-            <ul className="text-secondary text-end">
+            <ul className="text-secondary lg:text-end text-left justify-start">
               {tech.map((item, index) => (
                 <li
                   key={index}
-                  className="pl-5 inline font-mono text-secondary_text text-sm underline decoration-secondary underline-offset-8"
+                  className="lg:pl-5 pr-5 pl-0 lg:pr-0 inline font-mono text-secondary_text text-sm underline decoration-secondary underline-offset-8"
                 >
                   {item}
                 </li>
@@ -34,7 +34,7 @@ const ProjectCard = ({ cover, title, description, tech, link }) => {
             </ul>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-6">
           <></>
           <a
             href={link}
@@ -42,7 +42,7 @@ const ProjectCard = ({ cover, title, description, tech, link }) => {
             rel="noreferrer"
             className="no-underline"
           >
-            <Github />
+            <Github strokeColor="primary_text" width="22" height="22" />
           </a>
         </div>
       </div>

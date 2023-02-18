@@ -2,7 +2,7 @@ import { Github } from "./Icons";
 
 const ProjectCardLeft = ({ cover, title, description, tech, link }) => {
   return (
-    <div className="flex flex-grow justify-left mt-14 gap-4 lg:flex-row flex-col">
+    <div className="flex flex-grow justify-left mt-14 gap-4 lg:flex-row flex-col-reverse">
       <div className="flex items-start flex-col z-20">
         <p className="font-mono text-secondary text-sm text-start">
           Featured Project
@@ -25,14 +25,14 @@ const ProjectCardLeft = ({ cover, title, description, tech, link }) => {
             ))}
           </ul>
         </div>
-        <div className="mt-4">
+        <div className="mt-6">
           <a
             href={link}
             target="_blank"
             rel="noreferrer"
             className="no-underline"
           >
-            <Github />
+            <Github strokeColor="primary_text" width="22" height="22" />
           </a>
         </div>
       </div>
