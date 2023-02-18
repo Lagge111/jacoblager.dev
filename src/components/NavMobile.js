@@ -62,7 +62,7 @@ const NavMobile = () => {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="flex flex-col px-6 fixed top-0 backdrop-blur-3xl bg-primary min-h-[100vh]"
+            className="flex flex-col px-6 fixed top-0 left-0 backdrop-blur-3xl bg-primary min-h-[100vh]"
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: "100vw", opacity: 1 }}
             transition={{ duration: 0.3 }}
@@ -73,7 +73,7 @@ const NavMobile = () => {
             }}
           >
             <motion.ul
-              className="mt-48 flex flex-col w-full mb-8 gap-8"
+              className="mt-48 flex flex-col w-full mb-8 ml-4 gap-8"
               variants={menuVariants}
               initial="closed"
               animate="open"
