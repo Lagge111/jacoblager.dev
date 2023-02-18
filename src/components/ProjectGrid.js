@@ -55,8 +55,8 @@ const ProjectGrid = () => {
       >
         {projects.map((item, index) => (
           <motion.li
-            initial={{ opacity: 0, y: "20px" }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
             viewport={{ once: true }}
             key={index}
