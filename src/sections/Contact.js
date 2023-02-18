@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex justify-center items-center content-center m-auto max-w-[900px] flex-col"
+      className="flex justify-center items-center content-center m-auto max-w-[900px] flex-col js-show-on-scroll"
     >
       <div className="flex justify-center pt-80 flex-col items-center">
-        <div className="flex flex-row gap-2 items-center">
-          <p className="font-mono text-secondary text-xl">03.</p>
+        <div className="flex flex-col gap-4 items-center">
+          <p className="font-mono text-secondary text-md">03. What's Next?</p>
           <p className="text-primary_text font-inter font-bold text-4xl">
             Get In Touch
           </p>
@@ -55,6 +55,14 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <a
+        href="/static/CV-JacobLager.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className=" mt-10 font-mono border rounded border-secondary text-secondary px-4 py-2 text-sm hover:bg-secondary/20 ease-in-out duration-300 no-underline flex sm:hidden"
+      >
+        Resume
+      </a>
     </div>
   );
 };

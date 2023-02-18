@@ -2,7 +2,7 @@ import { Github } from "./Icons";
 
 const ProjectCard = ({ cover, title, description, tech, link }) => {
   return (
-    <div className="flex flex-grow justify-left mt-14 gap-4 lg:flex-row flex-col">
+    <div className="flex flex-grow justify-left mt-14 gap-4 lg:flex-row flex-col overflow-clip">
       <div className="bg-misc_dark max-w-[60%] border-b-2 border-l-2 border-secondary/30 rounded-md">
         <img
           src={cover}

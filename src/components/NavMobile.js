@@ -56,7 +56,7 @@ const NavMobile = () => {
       <img
         src={LogoGreen}
         alt="logo"
-        className="sm:hidden absolute top-6 right-6 w-11 h-8 cursor-pointer"
+        className="sm:hidden absolute top-6 right-6 w-11 h-8 cursor-pointer hover:scale-105 ease-in-out duration-300"
         onClick={scrollToTop}
       />
       <AnimatePresence>

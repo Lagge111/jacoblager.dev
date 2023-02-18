@@ -16,7 +16,7 @@ const Nav = () => {
         <img
           src={LogoGreen}
           alt="logo"
-          className="w-16 h-12 cursor-pointer sm:flex hidden"
+          className="w-16 h-12 cursor-pointer sm:flex hidden hover:scale-105 ease-in-out duration-300"
           onClick={scrollToTop}
         />
         <div className="sm:flex hidden">

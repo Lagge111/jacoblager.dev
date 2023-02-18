@@ -1,4 +1,5 @@
 import { Github } from "./Icons";
+import { motion } from "framer-motion";
 
 const ProjectGrid = () => {
   const projects = [
@@ -36,12 +37,28 @@ const ProjectGrid = () => {
 
   return (
     <div className="flex justify-center flex-col">
-      <p className="text-primary_text font-inter text-2xl font-bold text-center">
+      <motion.p
+        initial={{ opacity: 0, y: "50px" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
+        className="text-primary_text font-inter text-2xl font-bold text-center"
+      >
         Other Projects
-      </p>
-      <ul className="grid grid-cols-fluid list-none relative gap-[15px] mt-14">
+      </motion.p>
+      <motion.ul
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ staggerChildren: 0.3 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-fluid list-none relative gap-[15px] mt-14"
+      >
         {projects.map((item, index) => (
-          <li
+          <motion.li
+            initial={{ opacity: 0, y: "20px" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
             key={index}
             className="relative top-0 hover:top-[-5px] ease-in-out duration-200 md:mx-0 mx-8"
           >
@@ -75,9 +92,9 @@ const ProjectGrid = () => {
                 </ul>
               </div>
             </div>
-          </li>
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };

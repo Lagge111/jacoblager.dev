@@ -1,5 +1,6 @@
 import Profile from "../assets/JacobLagerCompressedSquare.png";
 import Bullet from "../assets/bullet.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
@@ -20,10 +21,15 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex justify-center items-center content-center m-auto max-w-[900px]"
+      className="flex justify-center items-center content-center m-auto max-w-[900px] js-show-on-scroll"
     >
       <div className="flex justify-left pt-80 flex-col">
-        <div className="flex flex-row gap-2 items-center">
+        <motion.div
+          initial={{ opacity: 0, y: "150px" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-row gap-2 items-center"
+        >
           <p className="font-mono text-secondary text-xl">01.</p>
           <p className="text-primary_text font-inter font-bold text-2xl">
             About Me
@@ -31,8 +37,14 @@ const About = () => {
           <div className="relative flex py-5 items-center pl-2 md:w-[250px] sm:w-[200px] w-[150px] max-w-[250px]">
             <div className="flex-grow border-t border-secondary_text/30"></div>
           </div>
-        </div>
-        <div className="font-inter text-secondary_text mt-10 flex flex-col md:flex-row gap-10 max-w-3xl leading-relaxed">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: "150px" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          viewport={{ once: true }}
+          className="font-inter text-secondary_text mt-10 flex flex-col md:flex-row gap-10 max-w-3xl leading-relaxed"
+        >
           <div>
             <p>
               Hello! I'm Jacob, and I have always been drawn to the process of{" "}
@@ -48,32 +60,38 @@ const About = () => {
               and sparked a{" "}
               <span className="text-secondary">passion for learning</span> new
               languages and technologies.
-              <br />
-              <br />
-              <p>
-                Currently, I am in my final semester as a{" "}
-                <span className="text-secondary">
-                  Software Developer Student
-                </span>
-                , and I am excited to embark on a career in the professional
-                world of software development. I look forward to expanding my
-                knowledge and skills as I pursue my passion for creating
-                innovative solutions.
-              </p>
+            </p>
+            <br />
+            <p>
+              Currently, I am in my final semester as a{" "}
+              <span className="text-secondary">Software Developer Student</span>
+              , and I am excited to embark on a career in the professional world
+              of software development. I look forward to expanding my knowledge
+              and skills as I pursue my passion for creating innovative
+              solutions.
             </p>
           </div>
           <div className="flex md:justify-right justify-center">
-            <img
-              src={Profile}
-              alt="profile"
-              className="object-cover overflow-hidden rounded-lg max-w-xs bg-secondary border-b-2 border-r-2 border-secondary"
-            />
+            <div className="relative group">
+              <img
+                src={Profile}
+                alt="profile"
+                className=" relative object-cover overflow-hidden rounded-md max-w-xs bg-secondary border-b-2 border-r-2 border-secondary z-30"
+              />
+              <div className="absolute border-2 rounded-md top-3 left-5 z-0 border-secondary w-full h-[70%] max-h-[330px] group-hover:-translate-x-1 group-hover:-translate-y-1 ease-in-out duration-300 md:flex hidden"></div>
+            </div>
           </div>
-        </div>
+        </motion.div>
         <div className="relative flex py-5 items-center w-[250px] max-w-[250px] mt-10">
           <div className="flex-grow border-t border-secondary_text/30"></div>
         </div>
-        <div className=" max-w-3xl flex justify-center flex-col items-center leading-relaxed">
+        <motion.div
+          initial={{ opacity: 0, y: "150px" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          viewport={{ once: true }}
+          className=" max-w-3xl flex justify-center flex-col items-center leading-relaxed"
+        >
           <p className="font-inter text-secondary_text max-w-[500px]">
             Here are some <span className="text-secondary">tools</span> and
             <span className="text-secondary"> technologies</span> I've learned
@@ -92,7 +110,7 @@ const About = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
