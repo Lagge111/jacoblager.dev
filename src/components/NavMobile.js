@@ -11,7 +11,7 @@ const NavMobile = () => {
     });
   };
 
-  const menuVariants = {
+  const menu = {
     closed: {
       transition: {
         staggerChildren: 0.1,
@@ -26,7 +26,7 @@ const NavMobile = () => {
     },
   };
 
-  const itemVariants = {
+  const menuItem = {
     closed: {
       opacity: 0,
     },
@@ -74,35 +74,35 @@ const NavMobile = () => {
           >
             <motion.ul
               className="mt-48 flex flex-col w-full mb-8 ml-4 gap-8"
-              variants={menuVariants}
+              variants={menu}
               initial="closed"
               animate="open"
               exit="closed"
             >
               <motion.li
                 className="py-4 flex"
-                variants={itemVariants}
+                variants={menuItem}
                 onClick={toggleMenu}
               >
                 <NavbarLink text="About" target="#about" number="01." />
               </motion.li>
               <motion.li
                 className="py-4 flex"
-                variants={itemVariants}
+                variants={menuItem}
                 onClick={toggleMenu}
               >
                 <NavbarLink text="Projects" target="#projects" number="02." />
               </motion.li>
               <motion.li
                 className="py-4 flex"
-                variants={itemVariants}
+                variants={menuItem}
                 onClick={toggleMenu}
               >
                 <NavbarLink text="Contact" target="#contact" number="03." />
               </motion.li>
               <motion.li
                 className="py-4 flex"
-                variants={itemVariants}
+                variants={menuItem}
                 onClick={toggleMenu}
               >
                 <a
