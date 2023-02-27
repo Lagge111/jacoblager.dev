@@ -1,6 +1,6 @@
 # jacoblager.dev
 
-My personal portfolio website, built with React and Tailwind CSS, hosted at Netlify.
+[My personal portfolio website](https://jacoblager.dev/), built with React and Tailwind CSS, hosted at Netlify.
 
 ![Portfolio image](./public/static/portfolio-readme.png)
 
