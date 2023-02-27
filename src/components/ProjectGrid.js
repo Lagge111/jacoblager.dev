@@ -55,6 +55,15 @@ const ProjectGrid = () => {
       >
         Other Projects
       </motion.p>
+      <motion.p
+        initial={{ opacity: 0, y: "50px" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        viewport={{ once: true }}
+        className="text-secondary font-mono text-md text-center mt-2"
+      >
+        Bits and Bobs
+      </motion.p>
       <motion.ul
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
