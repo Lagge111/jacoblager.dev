@@ -1,6 +1,6 @@
 import CMIYC from "../assets/catchmeifyoucan-portfolio.png";
 import C1 from "../assets/c1-cover-dark.png";
-import PortfolioCover from "../assets/portfolio-print.png";
+import Leisurely from "../assets/leisurely-cover.png";
 import ChatAppCover from "../assets/a3-chatify-cover.png";
 import ProjectCard from "../components/ProjectCard";
 import ProjectCardLeft from "../components/ProjectCardLeft";
@@ -8,10 +8,44 @@ import ProjectGrid from "../components/ProjectGrid";
 import { motion } from "framer-motion";
 
 const Work = () => {
-  const CMIYCtech = ["Java", "JavaFX"];
-  const C1tech = ["React", "Material UI", "OpenAPI"];
-  const ChatAppTech = ["C#", ".NET"];
-  const PortfolioTech = ["React", "Tailwind CSS"];
+  const projects = [
+    {
+      id: 1,
+      title: "Only C1 Solution",
+      description:
+        "As a part of a university course, I, together with a project team of 30 students, collaborated to develop a front-end solution for a logistics system to keep track of hospital consumables for Region Östergötland, the major healthcare provider of the region.",
+      cover: C1,
+      tech: ["React", "Material UI", "OpenAPI"],
+      link: "https://gitlab.liu.se/tddc88-2022/c1/company-1-project",
+    },
+    {
+      id: 2,
+      title: "Chatify",
+      description:
+        "Collaborated with Mattias Larsson to create a multi-user chat application with a full-stack implementation in C# and .NET. The application features a GUI built using WPF and stores chat logs using JSON files.",
+      cover: ChatAppCover,
+      tech: ["C#", ".NET"],
+      link: "https://gitlab.liu.se/jacla554/tddd49_725g66",
+    },
+    {
+      id: 3,
+      title: "Catch Me If You Can",
+      description:
+        "Arcade style game with a retro feel, based on the logic from Pac-Man, with multiple levels and increasing difficulty. Has different enemy types and various power-ups. Handles game saves locally to file. Co-created with Mattias Larsson.",
+      cover: CMIYC,
+      tech: ["Java", "JavaFX"],
+      link: "https://gitlab.liu.se/jacla554/projektarbete",
+    },
+    {
+      id: 4,
+      title: "Leisurely",
+      description:
+        "A simple activity suggestion tool for when you're feeling indecisive. Has different categories of activities, and provides a link to learn more about each suggested activity. Built to experiment with open APIs.",
+      cover: Leisurely,
+      tech: ["React", "Tailwind", "daisyUI", "BoredAPI"],
+      link: "https://github.com/Lagge111/leisurely",
+    },
+  ];
 
   return (
     <div
@@ -44,64 +78,45 @@ const Work = () => {
             viewport={{ once: true }}
             className="flex flex-col gap-20"
           >
-            <motion.li
-              initial={{ opacity: 0, y: "50px" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <ProjectCard
-                cover={C1}
-                title="Only C1 Solution"
-                description="As a part of a university course, I, together with a project team of 30 students, collaborated to develop a front-end solution for a logistics system to keep track of hospital consumables for Region Östergötland, the major healthcare provider of the region."
-                tech={C1tech}
-                link="https://gitlab.liu.se/tddc88-2022/c1/company-1-project"
-              />
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: "50px" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <ProjectCardLeft
-                cover={ChatAppCover}
-                title="Chatify by A3 Studio"
-                description="Multi-user full-stack chat app, using WPF to create the GUI. Stores new chats and fetches existing chats from JSON file. Co-created with Mattias Larsson."
-                tech={ChatAppTech}
-                link="https://gitlab.liu.se/jacla554/tddd49_725g66"
-              />
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: "50px" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <ProjectCard
-                cover={CMIYC}
-                title="Catch Me If You Can"
-                description="Arcade style game with a retro feel, based on the logic from
-                          Pac-Man, with multiple levels and increasing difficulty. Has different enemy types and various power-ups. Handles game
-                          saves locally to file. Co-created with Mattias Larsson."
-                tech={CMIYCtech}
-                link="https://gitlab.liu.se/jacla554/projektarbete"
-              />
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: "50px" }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <ProjectCardLeft
-                cover={PortfolioCover}
-                title="This Website You're Visiting"
-                description="The website you're currently visiting - my personal portfolio website. Built to develop and solidify my knowledge about front-end development. I hope you're enjoying it so far!"
-                tech={PortfolioTech}
-                link="https://github.com/Lagge111/jl-portfolio"
-              />
-            </motion.li>
+            {projects.map((project, index) => {
+              if (index % 2 === 0) {
+                return (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    viewport={{ once: true }}
+                  >
+                    <ProjectCard
+                      cover={project.cover}
+                      title={project.title}
+                      description={project.description}
+                      tech={project.tech}
+                      link={project.link}
+                    />
+                  </motion.li>
+                );
+              } else {
+                return (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, y: "50px" }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    viewport={{ once: true }}
+                  >
+                    <ProjectCardLeft
+                      cover={project.cover}
+                      title={project.title}
+                      description={project.description}
+                      tech={project.tech}
+                      link={project.link}
+                    />
+                  </motion.li>
+                );
+              }
+            })}
             <div className="mt-40">
               <ProjectGrid />
             </div>

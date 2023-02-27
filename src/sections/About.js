@@ -16,6 +16,8 @@ const About = () => {
     "HTML",
     "Java",
     "VS Code",
+    "C#",
+    ".NET",
   ];
 
   return (
