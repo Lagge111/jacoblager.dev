@@ -50,15 +50,15 @@ const ProjectGrid = ({ projects }) => {
               <header className="font-inter text-primary_text font-bold text-xl group-hover:text-secondary ease-in-out duration-200">
                 {item.title}
               </header>
-              <p className="font-inter text-secondary_text text-sm mt-2 leading-relaxed">
+              <p className="font-inter text-primary_text/70 text-sm mt-2 leading-relaxed">
                 {item.description}
               </p>
               <div className="mt-4">
-                <ul className="gap-2 grid grid-cols-3 mb-4 text-secondary_text/90 font-mono text-sm">
+                <ul className="gap-3 flex items-end flex-grow flex-wrap mb-4 text-secondary_text/90 font-mono text-xs">
                   {item?.skills?.map((skill, subindex) => (
                     <li
                       key={subindex}
-                      className="flex items-center underline decoration-secondary underline-offset-8"
+                      className="items-center decoration-secondary underline-offset-[5px]"
                     >
                       {skill}
                     </li>

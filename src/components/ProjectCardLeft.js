@@ -18,7 +18,7 @@ const ProjectCardLeft = ({ cover, title, description, tech, link }) => {
             {tech.map((item, index) => (
               <li
                 key={index}
-                className="pr-5 inline font-mono text-secondary_text text-sm underline decoration-secondary underline-offset-8"
+                className="pr-5 inline font-mono text-secondary_text text-sm underline decoration-secondary underline-offset-8 leading-8"
               >
                 {item}
               </li>

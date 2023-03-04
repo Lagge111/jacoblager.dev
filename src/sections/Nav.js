@@ -19,15 +19,9 @@ const Nav = () => {
           className="w-16 h-12 cursor-pointer sm:flex hidden hover:scale-105 ease-in-out duration-300"
           onClick={scrollToTop}
         />
-        <div className="sm:flex hidden">
-          <NavbarLink target="#about" text="About" number="01." />
-        </div>
-        <div className="sm:flex hidden">
-          <NavbarLink target="#projects" text="Projects" number="02." />
-        </div>
-        <div className="sm:flex hidden">
-          <NavbarLink target="#contact" text="Contact" number="03." />
-        </div>
+        <NavbarLink target="#about" text="About" number="01." />
+        <NavbarLink target="#projects" text="Projects" number="02." />
+        <NavbarLink target="#contact" text="Contact" number="03." />
         <a
           href="/static/CV-JacobLager.pdf"
           target="_blank"
