@@ -1,4 +1,4 @@
-import Profile from "../assets/JacobLagerCompressedSquare.png";
+import Profile from "../assets/JL-square-compressed.jpg";
 import Bullet from "../assets/bullet.png";
 import { motion } from "framer-motion";
 
