@@ -22,11 +22,11 @@ const ProjectCard = ({ cover, title, description, tech, link }) => {
             {description}
           </p>
           <div className="mt-4">
-            <ul className="text-secondary lg:text-end text-left justify-start">
+            <ul className="text-secondary lg:text-end text-start justify-start ">
               {tech.map((item, index) => (
                 <li
                   key={index}
-                  className="lg:pl-5 pr-5 pl-0 lg:pr-0 inline font-mono text-secondary_text text-sm underline decoration-secondary underline-offset-8"
+                  className="lg:pl-5 pr-5 pl-0 lg:pr-0 inline font-mono text-secondary_text text-sm underline decoration-secondary underline-offset-8 leading-8"
                 >
                   {item}
                 </li>

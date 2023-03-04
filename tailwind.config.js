@@ -24,6 +24,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fill, minmax(250px, 1fr))",
+        fluid_large: "repeat(auto-fill, minmax(300px, 1fr))",
       },
       animation: {
         fadeIn: "fadeIn 0.5s ease-in",
