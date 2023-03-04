@@ -1,6 +1,5 @@
 import CMIYC from "./assets/catchmeifyoucan-portfolio.png";
 import C1 from "./assets/c1-cover-dark.png";
-import Leisurely from "./assets/leisurely-cover.png";
 import ChatAppCover from "./assets/a3-chatify-cover.png";
 import SpotifyProfileCover from "./assets/spotify-profile-cover.png";
 
