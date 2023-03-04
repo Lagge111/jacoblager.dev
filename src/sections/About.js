@@ -1,25 +1,9 @@
 import Profile from "../assets/JL-square-compressed.jpg";
 import Bullet from "../assets/bullet.png";
+import { skills } from "../data";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const skills = [
-    "React",
-    "Material UI",
-    "SQL",
-    "JavaScript",
-    "Tailwind",
-    "Ada 95",
-    "CSS",
-    "C++",
-    "Git",
-    "HTML",
-    "Java",
-    "VS Code",
-    "C#",
-    ".NET",
-  ];
-
   return (
     <div
       id="about"

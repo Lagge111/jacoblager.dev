@@ -1,49 +1,7 @@
 import { Github, Folder } from "./Icons";
 import { motion } from "framer-motion";
 
-const ProjectGrid = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "My Portfolio Website",
-      description:
-        "The website you're currently visiting. A personal website built to demonstrate my proficiency in front-end development, featuring examples of my work and skills.",
-      link: "https://github.com/Lagge111/jacoblager.dev",
-      skills: ["React", "Tailwind"],
-    },
-    {
-      id: 2,
-      title: "C++ Lab Series",
-      description:
-        "Laboratory work from a university course in C++, including dynamic memory handling, inheritance, polymorphism and much more.",
-      link: "https://gitlab.liu.se/jacla554/726g77",
-      skills: ["C++", "STL"],
-    },
-    {
-      id: 3,
-      title: "Java Lab Series",
-      description:
-        "Laboratory work from a university course in Java, where the main focus was object-oriented programming.",
-      skills: ["Java", "JavaFX"],
-    },
-    {
-      id: 4,
-      title: "Continuous Integration & Continuous Delivery",
-      description:
-        "Laboratory work from a university course in Software Engineering, where I experimented with CI/CD.",
-      link: "https://gitlab.liu.se/jacla554/lab5",
-      skills: ["YAML", "Docker"],
-    },
-    {
-      id: 5,
-      title: "The Next Big Thing",
-      description:
-        "Do you have an exciting idea that you want to realize? I'm always up for a challenge! Contact me below.",
-      link: "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository",
-      skills: ["???"],
-    },
-  ];
-
+const ProjectGrid = ({ projects }) => {
   return (
     <div className="flex justify-center flex-col">
       <motion.p
