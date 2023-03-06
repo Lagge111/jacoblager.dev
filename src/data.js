@@ -57,7 +57,7 @@ const projects = [
       "Collaborated with Mattias Larsson to create a multi-user chat application with a full-stack implementation in C# and .NET. The application features a GUI built using WPF and stores chat logs using JSON files.",
     cover: ChatAppCover,
     tech: ["C#", ".NET"],
-    link: "https://gitlab.liu.se/jacla554/tddd49_725g66",
+    link: "https://github.com/Lagge111/chatify",
   },
   // {
   //   id: 5,
@@ -92,7 +92,7 @@ const miscProjects = [
     title: "Catch Me If You Can",
     description:
       "Co-created with Mattias Larsson, my programming journey started with an arcade-style game based on Pac-Man's logic. The game has multiple levels, increasing difficulty, various power-ups, enemy types, and locally saved game files.",
-    link: "https://gitlab.liu.se/jacla554/projektarbete",
+    link: "https://github.com/Lagge111/catch-me-if-you-can",
     skills: ["Java", "JavaFX"],
   },
   {
@@ -100,7 +100,7 @@ const miscProjects = [
     title: "C++ Lab Series",
     description:
       "Laboratory work from a university course in C++, including dynamic memory handling, inheritance, polymorphism and much more.",
-    link: "https://gitlab.liu.se/jacla554/726g77",
+    link: "https://github.com/Lagge111/cpp-labs",
     skills: ["C++", "STL"],
   },
   {
