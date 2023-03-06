@@ -37,15 +37,21 @@ const ProjectGrid = ({ projects }) => {
             <div className="flex justify-between flex-col items-start h-full p-6 bg-misc_light overflow-auto">
               <div className="flex flex-row justify-between items-center w-full mb-4">
                 <Folder />
-                <a
-                  title="Github"
-                  href={item.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mb-2 self-end flex items-center"
-                >
-                  <Github strokeColor="secondary_text" height="24" width="24" />
-                </a>
+                {item.link && (
+                  <a
+                    title="Github"
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mb-2 self-end flex items-center"
+                  >
+                    <Github
+                      strokeColor="secondary_text"
+                      height="24"
+                      width="24"
+                    />
+                  </a>
+                )}
               </div>
               <header className="font-inter text-primary_text font-bold text-xl group-hover:text-secondary ease-in-out duration-200">
                 {item.title}
