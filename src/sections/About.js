@@ -1,5 +1,5 @@
-import Profile from "../assets/JL-square-compressed.jpg";
-import Bullet from "../assets/bullet.png";
+import Profile from "../assets/JL-square-compressed.webp";
+import Bullet from "../assets/bullet.webp";
 import { skills } from "../data";
 import { motion } from "framer-motion";
 

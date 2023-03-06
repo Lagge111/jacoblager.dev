@@ -1,8 +1,8 @@
 // import CMIYC from "./assets/catchmeifyoucan-portfolio.png";
-import C1 from "./assets/c1-cover-dark.png";
-import ChatAppCover from "./assets/a3-chatify-cover.png";
-import SpotifyProfileCover from "./assets/spotify-profile-cover.png";
-import Hueify from "./assets/hueify-cover.png";
+import C1 from "./assets/c1-cover-dark.webp";
+import ChatAppCover from "./assets/a3-chatify-cover.webp";
+import SpotifyProfileCover from "./assets/spotify-profile-cover.webp";
+import Hueify from "./assets/hueify-cover.webp";
 
 const skills = [
   "React",
