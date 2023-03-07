@@ -1,6 +1,6 @@
-import { Github } from "./Icons";
+import { Github, External } from "./Icons";
 
-const ProjectCard = ({ cover, title, description, tech, link }) => {
+const ProjectCard = ({ cover, title, description, tech, link, live }) => {
   return (
     <div className="flex flex-grow justify-left mt-14 gap-4 lg:flex-row flex-col overflow-clip">
       <div className="bg-misc_dark max-w-[60%] border-b-2 border-l-2 border-secondary/30 rounded-md">
@@ -34,15 +34,25 @@ const ProjectCard = ({ cover, title, description, tech, link }) => {
             </ul>
           </div>
         </div>
-        <div className="mt-6">
+        <div className="mt-6 flex flex-row-reverse lg:flex-row justify-center items-center gap-3">
           <></>
+          {live && (
+            <a
+              href={live}
+              target="_blank"
+              rel="noreferrer"
+              className="no-underline"
+            >
+              <External width="24" height="24" />
+            </a>
+          )}
           <a
             href={link}
             target="_blank"
             rel="noreferrer"
             className="no-underline"
           >
-            <Github strokeColor="primary_text" width="22" height="22" />
+            <Github strokeColor="primary_text" width="24" height="24" />
           </a>
         </div>
       </div>

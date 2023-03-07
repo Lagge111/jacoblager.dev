@@ -47,8 +47,8 @@ const ProjectGrid = ({ projects }) => {
                   >
                     <Github
                       strokeColor="secondary_text"
-                      height="24"
-                      width="24"
+                      height="28"
+                      width="28"
                     />
                   </a>
                 )}

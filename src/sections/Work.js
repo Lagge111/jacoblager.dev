@@ -51,6 +51,7 @@ const Work = () => {
                     description={project.description}
                     tech={project.tech}
                     link={project.link}
+                    live={project.live}
                   />
                 ) : (
                   <ProjectCardLeft
@@ -59,6 +60,7 @@ const Work = () => {
                     description={project.description}
                     tech={project.tech}
                     link={project.link}
+                    live={project.live}
                   />
                 )}
               </motion.li>

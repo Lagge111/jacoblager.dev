@@ -31,6 +31,7 @@ const projects = [
     cover: SpotifyProfileCover,
     tech: ["React", "Tailwind", "Express.js", "Spotify API", "Heroku"],
     link: "https://github.com/Lagge111/spotify-profile",
+    live: "https://spotify-profile-stats.herokuapp.com/",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ const projects = [
     cover: Hueify,
     tech: ["React", "Tailwind", "daisyUI"],
     link: "https://github.com/Lagge111/hueify",
+    live: "https://hueify-color-extractor.netlify.app/",
   },
   {
     id: 3,
