@@ -33,7 +33,7 @@ const Contact = () => {
             rel="noreferrer"
             className="top-0 hover:top-[-3px] relative ease-in-out duration-200"
           >
-            <Github strokeColor="secondary_text" width="28" height="28" />
+            <Github strokeColor="secondary_text" width="30" height="30" />
           </a>
           <a
             title="LinkedIn"

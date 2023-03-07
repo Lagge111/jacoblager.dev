@@ -41,7 +41,7 @@ const projects = [
     cover: Hueify,
     tech: ["React", "Tailwind", "daisyUI"],
     link: "https://github.com/Lagge111/hueify",
-    live: "https://elaborate-manatee-12095a.netlify.app/",
+    live: "https://hueify-color-extractor.netlify.app/",
   },
   {
     id: 3,

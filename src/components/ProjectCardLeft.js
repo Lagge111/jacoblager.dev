@@ -32,7 +32,7 @@ const ProjectCardLeft = ({ cover, title, description, tech, link, live }) => {
             rel="noreferrer"
             className="no-underline"
           >
-            <Github strokeColor="primary_text" width="22" height="22" />
+            <Github strokeColor="primary_text" width="24" height="24" />
           </a>
           {live && (
             <a
@@ -41,7 +41,7 @@ const ProjectCardLeft = ({ cover, title, description, tech, link, live }) => {
               rel="noreferrer"
               className="no-underline"
             >
-              <External width="30" height="30" />
+              <External width="24" height="24" />
             </a>
           )}
         </div>

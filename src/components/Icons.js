@@ -14,13 +14,13 @@ export const LinkedIn = () => {
   );
 };
 
-export const Github = () => {
+export const Github = ({ width, height }) => {
   return (
     <svg
       className="fill-secondary_text hover:fill-secondary ease-in-out duration-200 cursor-pointer"
       fill="currentColor"
-      width="30"
-      height="30"
+      width={width}
+      height={height}
       viewBox="0 0 32 32"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

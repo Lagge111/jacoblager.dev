@@ -34,7 +34,7 @@ const ProjectCard = ({ cover, title, description, tech, link, live }) => {
             </ul>
           </div>
         </div>
-        <div className="mt-6 flex justify-center items-center gap-3">
+        <div className="mt-6 flex flex-row-reverse lg:flex-row justify-center items-center gap-3">
           <></>
           {live && (
             <a
@@ -43,7 +43,7 @@ const ProjectCard = ({ cover, title, description, tech, link, live }) => {
               rel="noreferrer"
               className="no-underline"
             >
-              <External width="30" height="30" />
+              <External width="24" height="24" />
             </a>
           )}
           <a
@@ -52,7 +52,7 @@ const ProjectCard = ({ cover, title, description, tech, link, live }) => {
             rel="noreferrer"
             className="no-underline"
           >
-            <Github strokeColor="primary_text" width="22" height="22" />
+            <Github strokeColor="primary_text" width="24" height="24" />
           </a>
         </div>
       </div>
